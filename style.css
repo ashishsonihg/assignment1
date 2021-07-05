@@ -1,0 +1,488 @@
+*{
+ font-family: 'Arial';
+  letter-spacing: 0.1vw;
+  font-size: 1.12vw;
+}
+.menu-button{
+  position: absolute;
+  margin: 3vw 2.5vw;
+  width: 2vw;
+  background-color: black;
+}
+.menu-button:hover{
+  cursor: pointer;
+}
+.pagemenu{
+  width: 11vw;
+  height: fit-content;
+  position: absolute;
+  background-color:#b5c1d8;
+  left: -100vw;
+  padding: 0px;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#introText1{
+  color:#dddddd;
+  text-transform: uppercase;
+}
+.pagemenu li {
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+.pagemenu li:hover {
+  background-color: #ddd;
+  cursor:pointer;
+  font-weight: bold;
+  box-shadow:8px 8px 10px 0 rgba(0,0,0,0.2);
+}
+.menu:hover .menu-button{
+  background-color:#b5c1d8;
+}
+
+.menu:hover .pagemenu{
+    margin: 3vw 5vw;
+    left: 0;
+    cursor:pointer;
+
+}
+uc{
+  text-transform: uppercase;
+}
+#intro{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/int.jpeg');
+  background-size: cover;
+
+  margin:0px;
+}
+.intro-box{
+  width:auto;
+  height:40vw;
+  display: flex;
+}
+
+.people-num{
+  font-size:2.27vw;
+}
+.people-head{
+  font-size:0.8vw;color:rgb(160,160,160);
+  text-transform: uppercase;
+}
+.people-data{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding:5.58vw 0 5.58vw 0;
+}
+.bo{
+  width:auto;
+  height:40vw;
+  display: flex;
+}
+
+.ser-box{
+  width:auto;
+  height: auto;
+  display: flex;
+}
+.grey{
+  color:rgb(160,160,160);
+}
+grey{
+  color:rgb(160,160,160);
+}
+
+.quote{
+  color:white;
+  font-size:6vw;
+  width:50%;
+  text-transform: uppercase;
+}
+.quote2{
+  font-size: 2.79vw;
+  font-weight: bold;
+  margin: 5.58vw;
+  text-transform: uppercase;
+}
+.text-box{
+  padding: 5vw;
+  padding-top: 7vw;
+}
+.box2{
+  height:inherit;
+  width:50%;
+  background-size: cover;
+}
+red{
+  color:#E32636;
+  font-size: inherit;
+}
+.qSym{
+  width: 15vw;
+  margin: 7vw 0 0 4vw;
+}
+.selection{
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  margin-left: 10%;
+  height: inherit;
+  width: 80%;
+  grid-column-gap: 0vw ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.blg-box{
+  width: 23vw;
+  height: 23vw;
+}
+.box{
+  border-right: solid;
+  text-align: center;
+  border-width: thin;
+  border-color: rgb(160,160,160);
+  padding:0 5.58vw 0 5.58vw;
+}
+.button{
+  margin:1.12vw;
+  margin-left: 2.79vw;
+  margin-right: 2.79vw;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  margin-top:5.58vw;
+  margin-bottom: 5.58vw;
+}
+label:hover{
+  font-weight: bolder;
+  color: black;
+  cursor:pointer;
+}
+
+#crea, #inno,#povw{
+  grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.control-me{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#crea{
+  display: none;
+}
+#inno{
+  display: none;
+}
+#povw{
+  display: none;
+}
+#toggle:checked ~ #crea {
+  display: block;
+  left: 0;
+}
+#toggle2:checked ~ #inno {
+  display: block;
+  left: 0;
+}
+#toggle3:checked ~ #povw{
+  display: block;
+  left: 0;
+}
+
+
+#toggle:checked ~ #creativity {
+  font-weight: bold;
+  border-bottom: solid #E32636;
+  border-width: 0.25vw;
+  color: black;
+}
+
+
+#toggle2:checked ~ #innovation {
+  font-weight: bold;
+  border-bottom: solid #E32636;
+  border-width: 0.25vw;
+  color: black;
+}
+
+
+#toggle3:checked ~ #pov {
+  font-weight: bold;
+  border-bottom: solid #E32636;
+  border-width: 0.25vw;
+  color: black;
+}
+
+
+label{
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 0.5vw;
+  margin-top: 7vw;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+/* new */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.25vw;
+  bottom: -0.25vw;
+  left: 0;
+  background-color: #E32636;
+  transform-origin: bottom right;
+  transition: transform 0.15s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.qText{
+  font-size: 2.5vw;
+  margin: 0% 10% 5% 20%;
+color:white;
+}
+
+
+.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: absolute;
+  padding: 0px;
+}
+
+.dropdown li {
+  position: relative;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0;
+  height: 0.55vw;
+  line-height: 2.6vw;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown li ul {
+  position: absolute;
+  margin: 4.5vw 2.5vw;
+  list-style: none;
+  background-color: #b5c1d8;
+  width: 11.2vw;
+  max-height: 0;
+  -webkit-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s;
+  overflow: hidden;
+  padding: 0px;
+  box-shadow: 4px 5px 7px 0px #00000054;
+
+}
+
+.dropdown li ul li a {
+  height: 2vw;
+  line-height: 2vw;
+  color:black;
+  padding-left: 0.5vw;
+}
+
+.dropdown li ul li a:hover {
+
+}
+
+.dropdown li:hover>ul {
+  max-height: 30vw;
+  padding: 0;
+}
+
+.dropdown li:hover>a {
+}
+.make-it-slow {
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.make-it-slow:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* The fast way */
+.make-it-fast {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.make-it-fast::after {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.make-it-fast:hover::after {
+  opacity: 1;
+}
+
+.num{
+  font-size: 10vw;
+  color:white;
+  width: 100%;
+  margin: 5% 0 0 1vw ;
+  text-align: right;
+}
+
+.peopleNav{
+  margin-left: 60%;
+  width: 33%;
+  height: fit-content;
+  margin-top: 5vw;
+}
+.peopleItem{
+  height: 2.2vw;
+  text-transform: uppercase;
+  font-size: 1vw;
+  padding-top: 1vw;
+  list-style: none;
+  text-align: right;
+  border-bottom: solid #00000020 0.1vw;
+  color: white;
+
+}
+
+.peopleItem:hover{
+  cursor: pointer;
+  color:black;
+}
+.grow { transition: all .2s ease-in-out; width:100%;height: 100%;}
+.grow:hover { transform: scale(1.1); }
+.growImg { transition: all .2s ease-in-out;}
+.growImg:hover { transform: scale(1.1);}
+
+
+.peopleImgs > img{
+  width: 23vw;
+  margin: 1vw;
+  height: 23vw;
+  object-fit: cover;
+
+}
+.peopleImgs{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.contact{
+  height: 50vw;
+  display: flex;
+}
+.conDetails{
+  background-color:#E32636;
+}
+.conForm{
+  height: 68%;
+  display: grid;
+  padding: 8vw;
+  padding-bottom: 0;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+
+
+}
+.conForm>input,select{
+  height: 3vw;
+  padding: 0.5vw;
+  border: solid #afafafba;
+  border-width: 0.1vw;
+}
+.conForm>input[type="button"]{
+  height: 4vw;
+  padding: 0.5vw;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  width: 10vw;
+}
+
+.conForm>select{
+  height: 4.2vw;
+}
+.conForm>textarea{
+  height: 7vw;
+  padding: 1.2vw 0.5vw;
+  vertical-align: top;
+  resize: none;
+  border: solid #afafafba;
+  border-width: 0.1vw;
+}
+.cus{
+  height: 30vw;
+  margin-left: 15vw;
+  position: relative;
+  top: -6vw;
+}
+footer{
+  padding: 4vw 0;
+display: flex;
+justify-content: center;
+margin-top: 4vw;
+border: solid #afafafba 1px;
+
+}
+footer>img{
+  width: 2.5vw;
+  margin: 0 0.1vw;
+}
+.conDetails{
+  display: grid;
+  grid-template-rows: 10vw 10vw 10vw;
+  align-content: center;
+  justify-content: center;
+
+}
+.conRow{
+  width: 35vw;
+  display: flex;
+}
+.conRow>img{
+      height: 5vw;
+      margin: 2.5vw;
+}
+.conRow>p{
+  padding-top: 3vw;
+    color: white;
+    text-transform: uppercase;
+}

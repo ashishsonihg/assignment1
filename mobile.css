@@ -1,0 +1,452 @@
+*{
+ font-family: 'Arial';
+  letter-spacing: 0.1vw;
+  font-size: 2vw;
+}
+#introText1{
+  height:1.67vw;
+  font-size:1.88vw;
+  color:#dddddd;
+  text-transform: uppercase;
+}
+.people-num{
+  font-size:6vw;
+}
+.people-head{
+  font-size:1.5vw;color:rgb(160,160,160);
+  text-transform: uppercase;
+}
+.menu-button{
+  position: absolute;
+  margin: 5vw;
+  width: 4vw;
+  background-color: black;
+}
+.qSym {
+    width: 30vw;
+    margin: 7vw 0 0 4vw;
+}
+.menu-button:hover{
+  cursor: pointer;
+}
+.pagemenu{
+  width: 18vw;
+  height: fit-content;
+  position: absolute;
+  background-color:#cbcbcb;
+  left: -100vw;
+  padding: 0px;
+  color:black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.pagemenu li {
+  text-decoration: none;
+  display: block;
+  text-transform: capitalize;
+  padding: 10px 20px;
+}
+.pagemenu li:hover {
+  background-color: #ddd;
+  cursor:pointer;
+}
+
+
+.menu:hover .pagemenu{
+    margin: 5vw 9vw;
+    left: 0;
+    cursor:pointer;
+}
+.menu:hover .menu-button{
+  background-color:#cbcbcb;
+}
+uc{
+  text-transform: uppercase;
+}
+#intro{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('img/bg.jpeg');
+  background-size: cover;
+  width: 100vw;
+  height: 55vw;
+  margin:0px;
+}
+.people-data{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+
+  justify-content:center;
+  padding:5.58vw 0 5.58vw 0;
+}
+.bo{
+  width:auto;
+  height:160vw;
+  display: grid;
+  grid-template-rows: 1fr 0.7fr;
+}
+
+.ser-box{
+  width:auto;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.grey{
+  color:rgb(160,160,160);
+}
+
+.quote{
+  color:white;
+  font-size: 9vw;
+  width: 80%;
+  text-transform: uppercase;
+}
+.quote2{
+  font-size: 7vw;
+  font-weight: bold;
+  margin: 5.5vw;
+  margin-top: 8vw;
+  text-transform: uppercase;
+}
+.text-box{
+  padding: 12vw;
+  padding-top: 15vw;
+}
+.box2{
+  width:100%;
+  background-size: cover;
+}
+
+.serImg{
+  width: 44vw;
+}
+red{
+  color:#E32636;
+  font-size: inherit;
+}
+.selection{
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  height: 100%;
+  grid-column-gap: 0vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+.blg-box{
+  width: 23vw;
+  height: 23vw;
+}
+.box{
+  border-right: solid;
+  text-align: center;
+  border-width: thin;
+  border-color: rgb(160,160,160);
+  padding:0 5.58vw 0 5.58vw;
+}
+.button{
+  margin:1.12vw;
+  margin-left: 2.79vw;
+  margin-right: 2.79vw;
+  text-align: center;
+}
+
+.title{
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.service{
+  display: grid;
+  grid-direction: column;
+  margin-top:5.58vw;
+  margin-bottom: 5.58vw;
+}
+label:hover{
+  font-weight: bolder;
+  color: black;
+  cursor:pointer;
+}
+.control-me{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 10%;
+  font-size: 3vw;
+}
+#toggle:checked ~ .control-me::after {
+    content: "creativity Text to alter the rendering of the content based on whether the device is a desktop or smartphone. In this case, the website can include JavaScript that detects the screen dimensions, which are then sent to the server that updates or alters the code sent to the device. Typically, the JavaScript stores the detected device capabilities in a cookie that the server reads on subsequent visits from the same device";
+}
+#toggle:checked ~ #creativity {
+  font-weight: bold;
+  border-bottom: solid #E32636 0.7vw;
+  color: black;
+}
+
+#toggle2:checked ~ .control-me::after {
+  content: "innovation Text to alter the rendering of the content based on whether the device is a desktop or smartphone. In this case, the website can include JavaScript that detects the screen dimensions, which are then sent to the server that updates or alters the code sent to the device. Typically, the JavaScript stores the detected device capabilities in a cookie that the server reads on subsequent visits from the same device";
+}
+#toggle2:checked ~ #innovation {
+  font-weight: bold;
+  border-bottom: solid #E32636 0.7vw;
+  color: black;
+}
+
+#toggle3:checked ~ .control-me::after {
+  content: "pont of view Text to alter the rendering of the content based on whether the device is a desktop or smartphone. In this case, the website can include JavaScript that detects the screen dimensions, which are then sent to the server that updates or alters the code sent to the device. Typically, the JavaScript stores the detected device capabilities in a cookie that the server reads on subsequent visits from the same device";
+}
+
+#toggle3:checked ~ #pov {
+  font-weight: bold;
+  border-bottom: solid #E32636 0.7vw;
+  color: black;
+}
+#crea, #inno,#povw{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin: 5% 10%;
+  font-size: 3vw;
+}
+#crea{
+  display: none;
+}
+#inno{
+  display: none;
+}
+#povw{
+  display: none;
+}
+#toggle:checked ~ #crea {
+  display: block;
+  left: 0;
+}
+#toggle2:checked ~ #inno {
+  display: block;
+  left: 0;
+}
+#toggle3:checked ~ #povw{
+  display: block;
+  left: 0;
+}
+
+
+label{
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 0.5vw;
+  margin-top: 7vw;
+  text-transform: uppercase;
+  font-size: 3.8vw;
+  margin: auto;
+}
+.qText{
+  font-size: 5vw;
+  margin: 0% 10% 5% 20%;
+  color:white;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+.dropdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  position: absolute;
+  padding: 0px;
+}
+
+.dropdown li {
+  position: relative;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0;
+  height: 0.55vw;
+  line-height: 2.6vw;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+
+.dropdown li ul {
+  position: absolute;
+  margin: 8.5vw 5vw;
+  list-style: none;
+  background-color: #b5c1d8;
+  width: 25vw;
+  max-height: 0;
+  -webkit-transition: max-height .5s;
+  -o-transition: max-height .5s;
+  transition: max-height .5s;
+  overflow: hidden;
+  padding: 0px;
+  box-shadow: 4px 5px 7px 0px #00000054;
+}
+
+.dropdown li ul li a {
+  height: 4vw;
+  line-height: 4vw;
+  color:black;
+  padding-left: 0.5vw;
+  font-size: 4vw;
+}
+
+.dropdown li ul li a:hover {
+
+}
+
+.dropdown li:hover>ul {
+  max-height: 30vw;
+  padding: 0;
+}
+
+.dropdown li:hover>a {
+}
+.make-it-slow {
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.make-it-slow:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* The fast way */
+.make-it-fast {
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.make-it-fast::after {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+.make-it-fast:hover::after {
+  opacity: 1;
+}
+
+.num{
+  font-size: 25vw;
+  color:white;
+  width: 100%;
+  margin: 5% 0 0 1vw ;
+  text-align: right;
+}
+
+.peopleImgs > img{
+  width: 23vw;
+  margin: 1vw;
+  height: 23vw;
+  object-fit: cover;
+}
+.peopleImgs{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.contact{
+  width:auto;
+  height:160vw;
+  display: grid;
+  grid-template-rows: 1fr 0.7fr;
+}
+.conDetails{
+  background-color:#E32636;
+}
+.conForm{
+  height: 68%;
+  display: grid;
+  padding: 8vw;
+  padding-bottom: 0;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+
+
+}
+.conForm>input,select{
+  height: 8vw;
+  padding: 0.5vw;
+  border: solid #afafafba;
+  border-width: 0.1vw;
+}
+.conForm>input[type="button"]{
+  height: 8vw;
+  padding: 0.5vw;
+  text-transform: uppercase;
+  color: white;
+  background: black;
+  width: 20vw;
+}
+
+.conForm>select{
+  height: 9.2vw;
+}
+.conForm>textarea{
+  height: 15vw;
+  padding: 1.2vw 0.5vw;
+  vertical-align: top;
+  resize: none;
+  border: solid #afafafba;
+  border-width: 0.1vw;
+}
+.cus{
+  height: 60vw;
+  margin-left: 30vw;
+  position: relative;
+  top: -10vw;
+}
+.peopleNav{
+  margin-left: 60%;
+  width: 33%;
+  height: fit-content;
+  margin-top: 5vw;
+}
+.peopleItem{
+  height: 6.2vw;
+  text-transform: uppercase;
+  font-size: 0vw;
+  padding-top: 3vw;
+  list-style: none;
+  text-align: right;
+  border-bottom: solid #00000020 0.1vw;
+  color: white;
+
+}
+
+.peopleItem:hover{
+  cursor: pointer;
+  color:black;
+}
+.grow { transition: all .2s ease-in-out; width:100%;height: 100%;transition: all .2s ease-in-out;
+    width: 100%;
+    height: 100%;
+    font-size: 2.8vw;}
+.grow:hover { transform: scale(1.1); }
+.growImg { transition: all .2s ease-in-out;}
+.growImg:hover { transform: scale(1.1);}
+
+footer{
+  padding: 4vw 0;
+display: flex;
+justify-content: center;
+margin-top: 4vw;
+border: solid #afafafba 1px;
+
+}
+footer>img{
+  width: 4.5vw;
+  margin: 0 0.5vw;
+}
