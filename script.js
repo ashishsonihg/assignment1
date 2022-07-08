@@ -4,7 +4,7 @@ let imghtml="";
 let slctd="all";
 
 document.getElementById(slctd).style.color='black';
-for (let j=1;j<=3;j++) {
+for (let j=1;j<=4;j++) {
   for(let i = 1; i < catg.length; i++){
       imghtml+='<img src="img/'+catg[i]+'/'+j+'.jpeg" class="all '+catg[i]+' peopleImg" >';
   }
